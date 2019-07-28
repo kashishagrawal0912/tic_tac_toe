@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woodback"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/board"
+        android:layout_width="0dp"
+        android:layout_height="617dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/board" />
+
+    <ImageView
+        android:id="@+id/iV21"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="6dp"
+        android:alpha="0"
+        android:onClick="clickIt"
+        android:tag="3"
+        app:layout_constraintBottom_toTopOf="@+id/iV31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iV11" />
+
+    <ImageView
+        android:id="@+id/iV22"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:alpha="0"
+        android:onClick="clickIt"
+        android:tag="4"
+        app:layout_constraintBottom_toTopOf="@+id/iV32"
+        app:layout_constraintStart_toEndOf="@+id/iV21"
+        app:layout_constraintTop_toBottomOf="@+id/iV12"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <ImageView
+        android:id="@+id/iV23"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        android:onClick="clickIt"
+        android:tag="5"
+        app:layout_constraintStart_toEndOf="@+id/iV22"
+        app:layout_constraintTop_toBottomOf="@+id/iV13" />
+
+    <ImageView
+        android:id="@+id/iV11"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="224dp"
+        android:alpha="0"
+        android:onClick="clickIt"
+        android:tag="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iV32"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        android:onClick="clickIt"
+        android:tag="7"
+        app:layout_constraintStart_toEndOf="@+id/iV31"
+        app:layout_constraintTop_toBottomOf="@+id/iV22" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#9A531D18"
+        android:padding="5dp"
+        android:text="Tic Tac Toe"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/background_light"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:fontFamily="serif"
+        app:layout_constraintBottom_toTopOf="@+id/board"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="Tic Tac Toe" />
+
+    <ImageView
+        android:id="@+id/iV31"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="false"
+        android:alpha="0"
+        android:onClick="clickIt"
+        android:tag="6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iV21" />
+
+    <ImageView
+        android:id="@+id/iV33"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="false"
+        android:alpha="0"
+        android:onClick="clickIt"
+        android:tag="8"
+        app:layout_constraintStart_toEndOf="@+id/iV32"
+        app:layout_constraintTop_toBottomOf="@+id/iV23" />
+
+    <ImageView
+        android:id="@+id/iV12"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="224dp"
+        android:adjustViewBounds="false"
+        android:alpha="0"
+        android:onClick="clickIt"
+        android:tag="1"
+        app:layout_constraintStart_toEndOf="@+id/iV11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iV13"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="224dp"
+        android:adjustViewBounds="false"
+        android:alpha="0"
+        android:onClick="clickIt"
+        android:tag="2"
+        app:layout_constraintStart_toEndOf="@+id/iV12"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/playAgainLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:alpha="1"
+        android:background="#BEFFEB3B"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/board"
+        app:layout_constraintEnd_toEndOf="@+id/board"
+        app:layout_constraintStart_toStartOf="@+id/iV21"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/winDisplay"
+            android:layout_width="151dp"
+            android:layout_height="76dp"
+            android:text="Circle wins"
+            android:textAlignment="center"
+            android:textColor="#F44336"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-condensed-medium" />
+
+        <Button
+            android:id="@+id/playAgain"
+            android:layout_width="152dp"
+            android:layout_height="36dp"
+            android:background="#9958FF3B"
+            android:onClick="playagain"
+            android:text="Play Again"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#3F51B5"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
